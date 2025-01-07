@@ -1,3 +1,4 @@
+import pygame.draw
 import pygame
 import time
 import random
@@ -25,3 +26,11 @@ snake_speed = 15
 
 message_font = pygame.font.SysFont('ubuntu', 30)
 score_font = pygame.font.SysFont('ubuntu', 25)
+
+def print_socre(score):
+    text = score_font.render("Score :" + str(score), True, orange)
+    game_display.blit(text, [0,0])
+
+def draw_snake(snake_size, snake_pixels):
+    for pixel in snake_pixels:
+        pygame.draw.rest
