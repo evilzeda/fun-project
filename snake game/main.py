@@ -33,4 +33,4 @@ def print_socre(score):
 
 def draw_snake(snake_size, snake_pixels):
     for pixel in snake_pixels:
-        pygame.draw.rest
+        pygame.draw.rect(game_display, white, [pixel[0], pixel[1], snake_size, snake_size])
